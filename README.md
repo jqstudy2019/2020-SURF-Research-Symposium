@@ -1,5 +1,10 @@
 # 2020 SURF Research Symposium
 Repository with files presented in my Presentation for 2020 SURF Research Symposium 
 
-A link to the Final SURF 2020 Presentation will be Posted once the SURF people provide it to me
-  The final Powerpoint file was too large to post here.
+Link to my presentation video:
+https://sites.uwm.edu/undergrad-research-symposium/2020/04/22/modeling-of-adhesive-interactions-between-tumor-cells-and-endothelial-cells/
+
+John Quinn, “Modeling of Adhesive Interactions Between Tumor Cells and Endothelial Cells”
+Mentor: Mahsa Dabagh, Biomedical Engineering
+
+Computer simulation has been a growing field, driven in large part by the increase in computing power easily available. One way to harness this power is to simulate that which we cannot easily analyze in the real world, in this case the possible interactions that simulated cancer cells may have with other blood components (red blood cells, white blood cells and plasma) or other surfaces that may come into contact with blood flow such as arterial walls, endothelial cells lining the arterial wall, and common implanted biomaterials. This will be done by using the molecular dynamic simulation software LAMMPS and fluid dynamics simulation software Palabos to model these interactions. These have been coupled before and their coupling has been validated with real world data, however our study goes a few steps further by simulating other possible blood components as well as the titular cancer cells and the other surfaces that blood may contact. The objective of our study is to couple LAMMPS and Palabos to model the circulation and its adhesive interactions with endothelial cells of the arterial wall. The important outputs of the simulations may be an increased understanding of how cancer cell interactions within the blood thus gaining a better knowledge of mechanisms underlying the cancer metastasis. Finally if this behavior can be understood better using these programs there may be new treatments that could be developed based on this data, and similar techniques used in this study may be applied to other disorders affecting blood flow such as sickle cell anemia (model the sickle cells) or maybe the uptake of glucose in diabetic patients may be modeled.
