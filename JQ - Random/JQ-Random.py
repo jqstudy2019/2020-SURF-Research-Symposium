@@ -45,29 +45,29 @@ for i in range(num_atoms):                             # Iterate for number of a
     
     
 # 3. Write LAMMPS Data File
- 
- with open('JQ-random.data','w') as fdata:
-	
+
+with open('JQ-random.data','w') as fdata:
+    
     # First line is a comment line 
-	fdata.write('Random Atoms - Written For JQ-Random - An exmaple made by: John Quinn\n\n')
-	
-	#--- Header ---#
-	
+    fdata.write('Random Atoms - Written For JQ-Random - An exmaple made by: John Quinn\n\n')
+    
+    #--- Header ---#
+    
     # Specify number of atoms and atom types 
-	fdata.write('{} atoms\n'.format(num_atoms))
-	fdata.write('{} atom types\n'.format(1))
-	
+    fdata.write('{} atoms\n'.format(num_atoms))
+    fdata.write('{} atom types\n'.format(1))
+    
     # Specify box dimensions
-	fdata.write('{} {} xlo xhi\n'.format(0.0, sys_size))
-	fdata.write('{} {} ylo yhi\n'.format(0.0, sys_size))
-	fdata.write('{} {} zlo zhi\n'.format(0.0, sys_size))
-	fdata.write('\n')
+    fdata.write('{} {} xlo xhi\n'.format(0.0, sys_size))
+    fdata.write('{} {} ylo yhi\n'.format(0.0, sys_size))
+    fdata.write('{} {} zlo zhi\n'.format(0.0, sys_size))
+    fdata.write('\n')
 
 
-	# Atoms section
-	fdata.write('Atoms\n\n')
+    # Atoms section
+    fdata.write('Atoms\n\n')
 
-	# Write each position 
-	for i,pos in enumerate(positions):
-		fdata.write('{} 1 {} {} {}\n'.format(i+1,*pos))
+    # Write each position 
+    for i,pos in enumerate(positions):
+        fdata.write('{} 1 {} {} {}\n'.format(i+1,*pos))
 
